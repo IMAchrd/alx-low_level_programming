@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -9,15 +7,15 @@
 */
 int main(void)
 {
-	char alpha;
+	char ph;
 
-	alpha = 'a'
-	while (alpha <= 'z')
+	ph = 'a';
+	while (ph <= 'z')
 	{
-		putchar(alpha);
-		alpha++;
+		putchar(ph);
+		ph++;
 	}
-		putchar(\n);
+		putchar('\n');
 
 	return (0);
 }
