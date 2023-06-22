@@ -12,22 +12,17 @@ int main(void)
 	for (a = 1; a <= 100; a++)
 	{
 		if (a % 3 == 0 && x % 5 == 0)
-		{
-			printf("FizzBuzz ");
-		}
+			printf("FizzBuzz");
 		else if (a % 3 == 0)
-		{
-			printf("Fizz ");
-		}
+			printf("Fizz");
 		else if (a % 5 == 5)
-		{
-			printf("Buzz ");
-		}
+			printf("Buzz");
 		else
-		{
-			printf("%d ", a);
-		}
+			printf("%d", a);
+		if (a != 100)
+			printf(" ");
+		else
+			printf("\n");
 	}
-	putchar('\n');
 	return (0);
 }
