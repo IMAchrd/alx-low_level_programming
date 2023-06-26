@@ -8,13 +8,18 @@
  */
 void puts2(char *str)
 {
-	int x;
+	int lg, i;
 
-	x = 0;
-	while (str[x] != '\0')
+	lg = 0;
+	while (str[lg] != '\0')
 	{
-		printf("%c", str[x]);
-		x += 2;
+		lg++;
 	}
-	printf("\n");
+
+	for (i = 0; i < lg; i += 2)
+	{
+		_putchar(str[i]);
+	}
+
+	_putchar('\n');
 }
